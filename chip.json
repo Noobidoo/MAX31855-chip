@@ -1,13 +1,28 @@
 {
-  "version": 1,
-  "name": "Inverter",
-  "author": "Uri Shaked",
-  "license": "MIT",
-  "docs": "https://github.com/wokwi/inverter-chip/blob/main/docs/README.md",
+  "name": "max31855",
+  "author": "noobidoo",
   "pins": [
-    "OUT",
-    "IN",
+    "GND",
+    "T-",
+    "T+",
     "VCC",
-    "GND"
-  ]
+    "SCK",
+    "CS",
+    "MISO",
+    ""
+  ],
+  "controls": [
+    {
+      "id": "relativeTemperature",
+      "label": "Relative Temperature",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 1
+    }
+  ],
+  "display": {
+    "width": 64,
+    "height": 128
+  }
 }
